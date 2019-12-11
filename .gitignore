@@ -1,4 +1,4 @@
-# This .gitignore file should be placed at the root of your Unity project directory
+﻿# This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
@@ -57,4 +57,10 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+!资料/HuaweiVR SDK2.0 Audio下载/HvrAudio/*.*
+!资料/HuaweiVR SDK2.0 For Unity/HvrSdk/*.*
+!资料/HuaweiVR SDK2.0 For Unity/HvrSdkDemo/*.*
+!资料/HuaweiVR SDK2.0 For Unity/手柄服务/*.*
+
 
