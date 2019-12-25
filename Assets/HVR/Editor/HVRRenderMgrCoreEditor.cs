@@ -75,7 +75,7 @@ public class HVRRenderMgrCoreEditor : UnityEditor.Editor
 
 		if (_expandAbout) {
 			string version = "Unknown";
-			version = "v2.0.0.28";
+			version = "v3.0.0.17";
 			EditorGUILayout.BeginHorizontal ();
 			GUILayout.FlexibleSpace ();
 			if (_icon == null) {
@@ -90,7 +90,7 @@ public class HVRRenderMgrCoreEditor : UnityEditor.Editor
 			EditorGUILayout.BeginHorizontal ();
 			GUILayout.FlexibleSpace ();
 			GUI.color = Color.yellow;
-			GUILayout.Label ("HuaweiVR SDK2.0", EditorStyles.boldLabel);
+			GUILayout.Label ("HuaweiVR SDK3.0", EditorStyles.boldLabel);
 			GUI.color = Color.white;
 			GUILayout.FlexibleSpace ();
 			EditorGUILayout.EndHorizontal ();
@@ -108,7 +108,7 @@ public class HVRRenderMgrCoreEditor : UnityEditor.Editor
 			GUILayout.Space (32f);
 			GUI.backgroundColor = Color.white;
 
-			EditorGUILayout.LabelField ("HuaweiVR SDK2.0 Links", EditorStyles.boldLabel);
+			EditorGUILayout.LabelField ("HuaweiVR SDK3.0 Links", EditorStyles.boldLabel);
 
 			GUILayout.Space (8f);
 
@@ -130,7 +130,7 @@ public class HVRRenderMgrCoreEditor : UnityEditor.Editor
 			GUILayout.Space (16f);
 
 			GUILayout.Label ("Homepage", GUILayout.ExpandWidth (false));
-			if (GUILayout.Button ("HuaweiVR SDK2.0 Website", GUILayout.ExpandWidth (false))) {
+			if (GUILayout.Button ("HuaweiVR SDK3.0 Website", GUILayout.ExpandWidth (false))) {
 				Application.OpenURL (LinkPluginWebsite);
 			}
 		}

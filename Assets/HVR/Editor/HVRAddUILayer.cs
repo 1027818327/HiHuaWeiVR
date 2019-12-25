@@ -14,11 +14,13 @@ using HVRCORE;
 
 namespace HVRCORE
 {
-	[InitializeOnLoad]
+
+    [InitializeOnLoad]
     public class HVRAddUILayer
     {
 		static HVRAddUILayer()
         {
+            SetAndroidBlitType();
             AddLayer(HVRDefCore.m_UILayerName);
             AddLayer (HVRDefCore.m_VolumeUILayerName);
 			if(LayerMask.NameToLayer(HVRDefCore.m_UILayerName)<0){
@@ -29,7 +31,15 @@ namespace HVRCORE
 			}
             return;
         }
-
+		
+        private static void SetAndroidBlitType()
+        {
+#if UNITY_2018_3_OR_NEWER
+            PlayerSettings.Android.blitType = AndroidBlitType.Never;
+            Debug.Log("PlayerSettings.Android.blitType: " + PlayerSettings.Android.blitType);
+#endif
+        }
+		
         private static void AddLayer(string layer)
         {
             if (!IsHasLayer(layer))
