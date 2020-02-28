@@ -75,7 +75,7 @@ public class HVRRenderMgrCoreEditor : UnityEditor.Editor
 
 		if (_expandAbout) {
 			string version = "Unknown";
-			version = "v3.0.0.17";
+			version = "v3.0.0.19";
 			EditorGUILayout.BeginHorizontal ();
 			GUILayout.FlexibleSpace ();
 			if (_icon == null) {
