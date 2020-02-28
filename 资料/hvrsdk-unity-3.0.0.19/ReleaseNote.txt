@@ -1,0 +1,8 @@
+id=com.huawei.hvrsdkserverapp 
+name= hvrsdk-unity-3.0.0.19
+version= v3.0.0.19
+AndroidVersion.ApiLevel=19
+release_date=2019-12-31
+description=HUAWEI VR is a platform for Huawei VR content developers. Developers use the Huawei VR SDK for development.
+更新说明：
+  1.	修复短信消息文字过多时溢出到短信提示弹框外的问题
